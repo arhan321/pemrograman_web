@@ -72,7 +72,7 @@ link konfig npm :
 https://github.com/arhan321/NGINX-PROXY-MANAGER.git
 
 # CONTOH KONFIG NAMESERVER DOMAIN KE CLOUDFLARE
-Perhatikan Gambar Contoh_domain.png, nameserver.png, domain_pointingcloudflare.png
+Perhatikan Gambar yang berada di file pert1 Contoh_domain.png, nameserver.png, domain_pointingcloudflare.png
 
 # PENJELASAN SINGKAT TENTANG API, JSON, XML 
 ## API : 
