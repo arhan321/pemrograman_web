@@ -3,18 +3,22 @@
 
 # Tools 
 - Navicat (tools untuk `DB`) 
+
 Link Download :
 https://shared.djncloud.my.id/tools_tempur
 
 - docker 
+
 Link Download : 
 https://www.docker.com/products/docker-desktop/
 
 - WSL2 ([Distro Ubuntu])
+
 Link Tutorial install :
 https://github.com/teamanubot/Rahasia-Umum
 
 - Postman
+
 Link Download : 
 https://www.postman.com/downloads/
 
@@ -25,12 +29,15 @@ https://www.postman.com/downloads/
 
 ## Referensi Belajar HTML CSS JS UNTUK PEMULA (Source Vidio By Sandhika Galih)
 Link Belajar `HTML` :
+
 https://www.youtube.com/watch?v=NBZ9Ro6UKV8&list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F
 
 Link Belajar `CSS` Dasar : 
+
 https://www.youtube.com/watch?v=CleFk3BZB3g&list=PLFIM0718LjIUBrbm6Gdh6k7ZUvPIAZm7p
 
 Link Belajar `JS` DASAR : 
+
 https://www.youtube.com/watch?v=RUTV_5m4VeI&list=PLFIM0718LjIWXagluzROrA-iBY9eeUt4w
 
 # FRAMEWORK WEB YANG DI GUNAKAN (MVC)
