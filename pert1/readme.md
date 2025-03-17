@@ -86,6 +86,7 @@ API (Application Programming Interface) adalah sekumpulan aturan dan mekanisme y
 ## API JSON
 ```
 GET https://api.djncloud.my.id/api/v1/mobil
+Accept: application/json
 ```
 Respown Balikan nya :
 ```bash
@@ -129,6 +130,10 @@ Respown Balikan nya :
 ]
 ```
 ## XML 
+```
+GET https://api.djncloud.my.id/api/v1/mobil
+Accept: application/xml
+```
 ```bash
 <cars>
     <car>
