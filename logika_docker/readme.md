@@ -66,6 +66,9 @@ setelah berhasil download docker nya, silahkan buka `settings` setelah itu ke `r
 
 setingan docker-compose.yml : 
 ```bash
+version: '3'
+
+services:
   apache:
     build: ./php
     container_name: apache
