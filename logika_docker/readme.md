@@ -45,6 +45,47 @@ Docker dapat digunakan di berbagai lingkungan, seperti:
 ## Bagaimana Docker Berjalan ?
 Docker berjalan dengan memanfaatkan containerization, yang memungkinkan aplikasi berjalan dalam lingkungan terisolasi dengan efisiensi tinggi. Dengan fitur seperti image, container, networking, dan volume, Docker mempermudah deployment dan manajemen aplikasi di berbagai sistem tanpa masalah kompatibilitas.
 
+## Kelebihan docker : 
+✅ Portabilitas Tinggi → Docker memungkinkan aplikasi berjalan di mana saja tanpa masalah lingkungan.
+
+✅ Efisiensi Sumber Daya → Lebih ringan dibandingkan virtual machine (VM) karena berbagi kernel host.
+
+✅ Deployment Cepat → Container dapat dijalankan dalam hitungan detik, tidak seperti VM yang butuh waktu lama untuk booting.
+
+✅ Konsistensi Lingkungan → Aplikasi berjalan dengan cara yang sama dari pengembangan hingga produksi.
+
+✅ Skalabilitas Mudah → Container dapat diperbanyak dengan cepat, cocok untuk microservices dan arsitektur cloud.
+
+✅ Dukungan Ekosistem yang Kuat → Banyak tools dan layanan mendukung Docker (Docker Hub, Kubernetes, OpenShift, dll.).
+
+## Kekurangan Docker :
+⚠ Keamanan Lebih Rentan → Karena berbagi kernel dengan host, container lebih rentan terhadap eksploitasi jika tidak dikonfigurasi dengan benar.
+
+⚠ Manajemen Storage & Data yang Kompleks → Data dalam container bersifat ephemeral (hilang jika container dihapus), sehingga memerlukan strategi penyimpanan yang baik.
+
+⚠ Konsumsi Resource Lebih Besar Dibandingkan Native Apps → Meskipun lebih ringan dari VM, menjalankan banyak container tetap memakan sumber daya CPU dan RAM.
+
+⚠ Harus Niat Belajar Lebih Lanjut → Pengguna baru perlu memahami konsep seperti Dockerfile, volume, networking, dan orchestrasi (Kubernetes, Docker Swarm).
+
+## Peluang Bagus Docker :
+💡 Adopsi Microservices & Cloud Computing → Banyak perusahaan beralih ke cloud-native development dan microservices, yang sangat cocok dengan Docker.
+
+💡 Dukungan untuk Edge Computing & IoT → Docker dapat digunakan untuk menjalankan aplikasi pada perangkat kecil dengan sumber daya terbatas.
+
+💡 Integrasi dengan Kubernetes & Orkestrasi Container → Semakin banyak organisasi yang mengadopsi Kubernetes untuk mengelola container dalam skala besar.
+
+💡 Peningkatan Keamanan & Manajemen Container → Perkembangan tools seperti Docker Security Scanning dan container runtime yang lebih aman (contoh: gVisor, Kata Containers).
+
+💡 Ekosistem & Komunitas yang Kuat → Docker terus berkembang dengan dukungan komunitas open-source yang aktif.
+
+## Ancaman Docker
+🔴 Kompleksitas Orkestrasi → Untuk skala besar, Docker memerlukan Kubernetes atau Docker Swarm, yang bisa sulit dikelola tanpa keahlian khusus.
+
+🔴 Ancaman Keamanan Serangan Supply Chain → Jika image yang diunduh dari Docker Hub tidak aman, itu bisa menjadi celah serangan.
+
+🔴 Kompleksitas Manajemen → Semakin kompleks lingkungan kontainer, maka semakin sulit untuk di kelola.
+
+
 ## Logika Dasar Docker
 `Image` → Blueprint atau template yang berisi sistem operasi ringan + aplikasi.
 
@@ -230,5 +271,8 @@ docker network inspect (nama network nya)
 ```
 docker network connect (nama network nya) (nama container nya)
 ```
+
+## Kesimpulan : 
+Docker memiliki banyak keunggulan dalam hal portabilitas, efisiensi, dan skalabilitas, yang menjadikannya pilihan utama dalam dunia DevOps dan cloud computing. Namun, ada tantangan terkait keamanan, manajemen storage, serta persaingan dengan teknologi lain.
 
 # SEKIAN DAN TERIMAKASIH
