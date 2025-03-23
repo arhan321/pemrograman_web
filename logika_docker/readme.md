@@ -85,7 +85,6 @@ Docker berjalan dengan memanfaatkan containerization, yang memungkinkan aplikasi
 
 🔴 Kompleksitas Manajemen → Semakin kompleks lingkungan kontainer, maka semakin sulit untuk di kelola.
 
-
 ## Logika Dasar Docker
 `Image` → Blueprint atau template yang berisi sistem operasi ringan + aplikasi.
 
