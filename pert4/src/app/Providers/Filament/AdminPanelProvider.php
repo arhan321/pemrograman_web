@@ -55,7 +55,8 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make()
                     ->label('Administration')
                     ->label('Settings')
-                    ->label('Logo'),
+                    ->label('Logo')
+                    ->label('Product'),
                     
             ])
             ->userMenuItems([

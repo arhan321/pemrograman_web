@@ -55,9 +55,6 @@
     </section>
     
     
-    
-    
-    
     <section class="section teams bg-tertiary">
         <div class="container">
             <div class="row justify-content-center">

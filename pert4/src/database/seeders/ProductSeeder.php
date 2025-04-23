@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class ProductSeeder extends Seeder
 {
@@ -12,6 +12,12 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        \App\Models\Product::create([
+            'nomor' => '1',
+            'name' => 'Logo 1',
+            'description' => 'Logo 1 Description',
+            'image' => '',
+            'link' => 'http://localhost/about'
+        ]);
     }
 }
