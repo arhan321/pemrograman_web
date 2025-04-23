@@ -20,7 +20,7 @@ php artisan migrate:fresh
 php artisan db:seed --force 
 php artisan shield:generate --all 
 php artisan project:init 
-chmod 777 -R storage/* && chmod 777 bootstrap/*
+chmod 777 -R /var/www/html
 
 buka localhost dengan browser Username : admin@admin.com Password : password
 
