@@ -26,9 +26,10 @@ class ClientResource extends Resource
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
-                // Forms\Components\TextInput::make('api_token')
-                //     ->required()
-                //     ->maxLength(255),
+                Forms\Components\TextInput::make('api_token')
+                    ->required()
+                    // ->maxLength(255),
+                    ->disabled(true),
                     
             ]);
     }
