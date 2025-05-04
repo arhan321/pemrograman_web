@@ -2,20 +2,20 @@
 
 namespace App\Filament\Admin\Resources;
 
+use App\Filament\Admin\Resources\ProductResource\Pages;
+use App\Filament\Admin\Resources\ProductResource\RelationManagers;
+use App\Models\Product;
 use Filament\Forms;
-use Filament\Tables;
-use App\Models\Client;
 use Filament\Forms\Form;
-use Filament\Tables\Table;
 use Filament\Resources\Resource;
+use Filament\Tables;
+use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Admin\Resources\ClientResource\Pages;
-use App\Filament\Admin\Resources\ClientResource\RelationManagers;
 
-class ClientResource extends Resource
+class ProductResource extends Resource
 {
-    protected static ?string $model = Client::class;
+    protected static ?string $model = Product::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -24,13 +24,15 @@ class ClientResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('api_token')
-                    // ->required()
-                    // ->maxLength(255),
-                    ->disabled(true),
-                    
+                    ->maxLength(255)
+                    ->default(null),
+                Forms\Components\TextInput::make('price')
+                    ->numeric()
+                    ->default(null)
+                    ->prefix('$'),
+                Forms\Components\TextInput::make('client_id')
+                    ->numeric()
+                    ->default(null),
             ]);
     }
 
@@ -40,9 +42,12 @@ class ClientResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('api_token')
-                    ->searchable()
-                    ->copyable(),
+                Tables\Columns\TextColumn::make('price')
+                    ->money()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('client_id')
+                    ->numeric()
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -75,9 +80,9 @@ class ClientResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListClients::route('/'),
-            'create' => Pages\CreateClient::route('/create'),
-            'edit' => Pages\EditClient::route('/{record}/edit'),
+            'index' => Pages\ListProducts::route('/'),
+            'create' => Pages\CreateProduct::route('/create'),
+            'edit' => Pages\EditProduct::route('/{record}/edit'),
         ];
     }
 }
